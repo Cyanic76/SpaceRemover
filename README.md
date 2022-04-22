@@ -1,6 +1,10 @@
 # Many tools
 
-Some tools and scripts I made. Feel free to [check all of them out](https://r.cyanic.tk?q=tools).
+Some tools and scripts I made. Feel free to check them all out here.
+
+## JavaScript & HTML
+
+- [SpaceRemover](https://tools.cyanic.tk/html/spaceremover)
 
 ---
 
