@@ -1,9 +1,7 @@
-# Space Remover
+# Many tools
 
-A simple space remover using a RegEx to remove spaces in a string.
-
-I created this tool because I was annoyed by PDFs with spaces everywhere.
+Some tools and scripts I made. Feel free to [check all of them out](https://r.cyanic.tk?q=tools).
 
 ---
 
-by [Cyanic](https://cyanic.tk) - MIT License
+by [Cyanic](https://cyanic.tk) - Everything under MIT License
