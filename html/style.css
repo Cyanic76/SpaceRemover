@@ -1,0 +1,43 @@
+body {
+	background-color: #ddd;
+	margin: 0;
+}
+
+/* Main container */
+#app {
+	background-color: #fff;
+	border-radius: 10px;
+	margin: 24px;
+	padding: 10px;
+}
+
+/* Links */
+a {
+	color: #33f;
+}
+
+/* Headings */
+h1 {
+	font-size: 25px;
+}
+h2 {
+	font-size: 18px;
+}
+
+/* Title */
+#title {
+	background-color: #66f;
+	color: white;
+}
+#title-container {
+	text-align: center;
+	padding: 20px;
+}
+.github {
+	padding: 5px;
+	background-color: white;
+	color: #222;
+	border: 1px solid #333;
+	text-decoration: none;
+	border-radius: 10px;
+}

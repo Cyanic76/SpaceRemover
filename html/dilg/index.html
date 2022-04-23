@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Discord Invite Link generator</title>
+		<link rel="stylesheet" href="../style.css">
+    <meta name="og:title" content="Discord Invite Link Generator">
+    <meta name="og:site_name" content="Cyanic">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id="title">
+			<div id="title-container">
+				<h1>DILG</h1>
+				This tool generates a link for users to use to add bots/applications to their Discord account.
+				<br><br>
+				<a href="https://github.com/Cyanic76/tools" class="github">View on GitHub</a>
+				<a href="https://tools.cyanic.tk/" class="github">Other tools</a>
+			</div>
+		</div>
+	
+		<div id="app">
+			<noscript>You have to enable JavaScript for this tool to work correctly.</noscript>
+			<br>
+			
+			<!-- Scopes -->
+			
+			<h2>Provide the scopes.</h2>
+			Permissions and applications.commands scope will not be validated if the bot scope isn't checked.<br><br>
+			<input id="scope_app_slash" type="checkbox"> applications.commands<br>
+			<input id="scope_app_slash2" type="checkbox"> applications.commands.update<br>
+			<input id="scope_app_store" type="checkbox"> applications.store.update<br>
+			<input id="scope_bot" type="checkbox"> bot<br>
+			<input id="scope_connections" type="checkbox"> connections<br>
+			<input id="scope_email" type="checkbox"> email<br>
+			<input id="scope_guilds" type="checkbox"> guilds<br>
+			<input id="scope_identify" type="checkbox"> identify<br>
+			Not sure about what you need? <a href="https://discord.com/developers/docs/topics/oauth2#shared-resources-oauth2-scopes">Learn more about scopes here</a>.<br>
+			Usually, <i>applications.commands</i> and <i>bot</i> scopes are enough for a bot.
+			
+			<br><br>
+			
+			<!-- Permissions -->
+			
+			<h2>Ask for permissions.</h2>
+			If you're generating an invite link for your bot, pick the correct permissions here. If you do pick permissions, the bot will create its own role in the servers it gets added to.
+			<br><br>
+			
+			<b>Administration powers</b>
+			<br>
+			<input id="perm_admin" type="checkbox"> Administrator *<br>
+			<input id="perm_audit_logs" type="checkbox"> View audit logs<br>
+			<input id="perm_insights" type="checkbox"> View server insights<br>
+			<input id="perm_server" type="checkbox"> Manage server *<br>
+			<input id="perm_roles" type="checkbox"> Manage roles *<br>
+			<input id="perm_channels" type="checkbox"> Manage channels *<br>
+			<input id="perm_webhooks" type="checkbox"> Manage webhooks *<br>
+			<input id="perm_events" type="checkbox"> Manage events *<br>
+			<input id="perm_emotes" type="checkbox"> Manage emotes and stickers *<br>
+			
+			<br>
+			<b>Moderation powers</b>
+			<br>
+			<input id="perm_kick" type="checkbox"> Kick members *<br>
+			<input id="perm_ban" type="checkbox"> Ban members *<br>
+			<input id="perm_nicknames" type="checkbox"> Manage nicknames<br>
+			<input id="perm_nick_own" type="checkbox"> Set own nickname<br>
+			<input id="perm_messages" type="checkbox"> Manage messages *<br>
+			<input id="perm_threads" type="checkbox"> Manage threads *<br>
+			<input id="perm_everyone" type="checkbox"> Use @everyone and @here<br>
+			
+			<br>
+			<b>Text channels</b>
+			<br>
+			<input id="perm_view" type="checkbox"> View channels and read messages<br>
+			<input id="perm_message" type="checkbox"> Send messages<br>
+			<input id="perm_invite" type="checkbox"> Create invite links<br>
+			<input id="perm_thread_public" type="checkbox"> Public threads<br>
+			<input id="perm_thread_private" type="checkbox"> Private threads<br>
+			<input id="perm_tts" type="checkbox"> Use Text-to-Speech (TTS)<br>
+			<input id="perm_send_embed" type="checkbox"> Use embeds<br>
+			<input id="perm_ext_emotes" type="checkbox"> Use external emotes<br>
+			<input id="perm_ext_stickers" type="checkbox"> Use external stickers<br>
+			<input id="perm_slash" type="checkbox"> Use other slash commands<br>
+			More info on <a href="https://support.discord.com/hc/en-us/articles/4403205878423-Threads-FAQ">Threads</a> and <a href="https://support.discord.com/hc/en-us/articles/1500000368501-Slash-Commands-FAQ">Slash commands</a>.
+			
+			<br><br>
+			<b>Voice channels</b>
+			<br>
+			<input id="perm_voice_join" type="checkbox"> Connect<br>
+			<input id="perm_voice_speak" type="checkbox"> Speak<br>
+			<input id="perm_voice_stream" type="checkbox"> Stream<br>
+			<input id="perm_voice_mute" type="checkbox"> Mute<br>
+			<input id="perm_voice_deafen" type="checkbox"> Deafen<br>
+			<input id="perm_voice_move" type="checkbox"> Move members to other voice channels<br>
+			<input id="perm_voice_auto" type="checkbox"> Use Voice Activity<br>
+			<input id="perm_voice_priority" type="checkbox"> Priority Speaker<br>
+			<input id="perm_voice_activities" type="checkbox"> Start Activities<br>
+			<input id="perm_voice_raisehand" type="checkbox"> Request to speak<br>
+			More info on <a href="https://discord.com/developers/docs/topics/permissions">Permissions</a>.
+			
+			<br><br>
+			* bot owner must have <a href="https://support.discord.com/hc/en-us/articles/219576828-Setting-up-Two-Factor-Authentication">2 factor authentication</a> enabled if the server requires 2FA.
+			
+			<br><br>
+			
+			<!-- App ID -->
+			
+			<h2>Set the application ID.</h2>
+			Paste your app/bot ID below.
+			<a href="https://discord.com/developers/applications">Generate a new app...</a>
+			<br><br>
+			<input id="id" placeholder="ID">
+			
+			<br><br>
+			
+			<!-- Redirect -->
+			
+			<h2>Set the redirect URL</h2>
+			Redirect the users somewhere else after they authorize your app/bot.<br><br>
+			<input id="redirect" placeholder="https://discord.com/app">
+			
+			<br><br>
+			
+			<!-- Require code grant -->
+			
+			<h2>Require a code grant?</h2>
+			Check the following box if your app requires a code grant to be added to users.<br>
+			<input id="require_code" type="checkbox"> Require code grant
+			
+			<br><br>
+			
+			<!-- Your link -->
+			
+			<h2>Generate your link</h2>
+			You'll be able to share the link to other users.<br>
+			<button onclick="gen();">Generate</button>
+			<br><br>
+			<span id="output_link">.</span>
+			
+			<br><br>
+		</div>
+		<br><br>
+		
+		<!-- Footer -->
+		<center>Tool made by <a href="https://cyanic.tk">Cyanic76</a>.</center>
+		<br><br>
+
+		<!-- Scripts -->
+		<script src="main.js"></script>
+	</body>
+</html>
