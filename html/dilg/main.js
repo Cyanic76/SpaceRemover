@@ -87,7 +87,7 @@ function gen() {
 	// Generate link
 	let scopes_encoded = encodeURI(scopes);
 	let link = "";
-	link = `https://discord.com/oauth2/authorize?client_id=${id}&scopes=${scopes}`;
+	link = `https://discord.com/oauth2/authorize?client_id=${id}&scopes=${scopes.replace(" ", "")}`;
 	if(scope_bot.checked && permissions > 0){
 		link += `&permissions=${permissions}`;
 	}
