@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Password Generator</title>
+		<link rel="stylesheet" href="../style.css">
+    <meta name="og:title" content="Password Generator">
+    <meta name="og:description" content="Finally, a password generator that doesn't spy on you or save the passwords.">
+    <meta name="og:site_name" content="Cyanic">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id="title">
+			<div id="title-container">
+				<h1>Password Generator</h1>
+				This tool helps you generate a random password when creating a new account anywhere on the web.
+				<br><br>
+				<a href="https://github.com/Cyanic76/tools" class="github">View on GitHub</a>
+				<a href="https://tools.cyanic.tk/" class="github">Other tools</a>
+			</div>
+		</div>
+		
+		<div id="app">
+			<noscript>You have to enable JavaScript for this tool to work correctly.</noscript>
+			<br>
+			
+			<!-- Characters selection -->
+			<h2>Choose a character set.</h2>
+			Select what characters you want to be in your new password.
+			<br><br>
+			<input id="char_l" name="chars" required type="radio"> Letters only<br>
+			<input id="char_ln" name="chars" required type="radio"> Letters and numbers<br>
+			<input id="char_lns" name="chars" required type="radio"> Letters, numbers & special characters<br>
+			<input id="char_ls" name="chars" required type="radio"> Letters & special characters
+			
+			<br><br>
+			
+			<!-- How long -->
+			<h2>How long should do you want your password to be?</h2>
+			Pick the length of your password here, between 8 and 2048. Some websites may
+			not accept more than a certain number of characters.
+			<br><br>
+			<input id="length" required type="number" min="8" max="2048">
+			
+			<br><br>
+			
+			<!-- Generate -->
+			<h2>Generate.</h2>
+			Generate, copy, paste and save your brand new password.<br>
+			<button onclick="gen();">Get your password</button>
+			<br><br>
+			
+			<textarea id="output" style="color: black; height: 96px; width: 100%;"></textarea>
+			
+		</div>
+		<br><br>
+		
+		<!-- Footer -->
+		<center>Tool made by <a href="https://cyanic.tk">Cyanic76</a>.</center>
+		<br><br>
+
+		<!-- Scripts -->
+		<script src="script.js"></script>
+	</body>
+</html>
