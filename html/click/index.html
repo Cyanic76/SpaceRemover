@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Clicker</title>
+		<link rel="stylesheet" href="../style.css">
+    <meta name="og:title" content="Discord Invite Link Generator">
+    <meta name="og:site_name" content="Cyanic">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body onload="load();">
+		<div id="title">
+			<div id="title-container">
+				<h1>Clicker</h1>
+				Test an autoclicker here.
+				<br><br>
+				<a href="https://github.com/Cyanic76/tools" class="github">View on GitHub</a>
+				<a href="https://tools.cyanic.tk/" class="github">Other tools</a>
+			</div>
+		</div>
+	
+		<div id="app">
+			<noscript>You have to enable JavaScript for this tool to work correctly.</noscript>
+			<br>
+			
+			<!-- Main -->
+			Click the button as fast as you can, or test an autoclicker here.
+			Refresh the page to restart.
+			
+			<br><br>
+			<span id="total">10 seconds left</span>
+			<br><br>
+			<button style="width: 100%; height: 250px;" id="start" onclick="start();">
+				<span style="font-size: 18px;">Click to start</span>
+			</button>
+			<button style="width: 100%; height: 250px; display: none;" id="main" onclick="score();">
+				<span id="score" style="font-size: 36px;">0</span><br>
+				<span style="font-size: 17px;">clicks</span>
+			</button>
+			
+			<br><br>
+		</div>
+		<br><br>
+		
+		<!-- Footer -->
+		<center>Tool made by <a href="https://cyanic.tk">Cyanic76</a>.</center>
+		<br><br>
+
+		<!-- Scripts -->
+		<script src="main.js"></script>
+	</body>
+</html>
