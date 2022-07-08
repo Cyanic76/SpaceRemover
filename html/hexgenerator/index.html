@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Hex String Generator</title>
+		<link rel="stylesheet" href="../style.css">
+    <meta name="og:title" content="Hex String Generator">
+    <meta name="og:description" content="Generate random hexadecimal strings.">
+    <meta name="og:site_name" content="Cyanic">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id="title">
+			<div id="title-container">
+				<h1>Hex String Generator</h1>
+				Generate random hexadecimal strings.
+				<br><br>
+				<a href="https://github.com/Cyanic76/tools" class="github">View on GitHub</a>
+				<a href="https://tools.cyanic.tk/" class="github">Other tools</a>
+			</div>
+		</div>
+		
+		<div id="app">
+			<noscript>You have to enable JavaScript for this tool to work correctly.</noscript>
+			<br>
+			
+			<!-- Characters selection -->
+			<h2>How many characters?</h2>
+			<input id="characters" required min="1" max="32" type="number">
+			
+			<br><br>
+			
+			<!-- How long -->
+			<h2>How many strings?</h2>
+			<input id="tries" required type="number" min="1" max="32">
+			
+			<br><br>
+			
+			<!-- Lowercase? -->
+			<h2>Lowercase?</h2>
+			<input id="lowercase" type="checkbox"> Use lowercase letters
+			
+			<br><br>
+			
+			<!-- Generate -->
+			<h2>Generate.</h2>
+			Generate, copy, paste and save your hex strings.<br>
+			<button onclick="generate();">Generate</button>
+			<br><br>
+			
+			<textarea readonly id="output" style="color: black; height: 96px; width: 100%;"></textarea>
+			
+		</div>
+		<br><br>
+		
+		<!-- Footer -->
+		<center>Tool made by <a href="https://cyanic.tk">Cyanic76</a>.</center>
+		<br><br>
+
+		<!-- Scripts -->
+		<script src="main.js"></script>
+	</body>
+</html>
