@@ -4,10 +4,13 @@ function generate(){
 	let lower = document.getElementById("lowercase");
 	let final = document.getElementById("output");
 	
-	final.value = ""
+	final.value = "";
 	
 	if(isNaN(chars) || chars > 32 || chars < 1){
 		alert("Character number must be a number between 1 and 32.")
+	}
+	if(isNaN(tries) || tries > 32 || tries < 1){
+		alert("Strings number must be a number between 1 and 32.")
 	}
 	
 	const items = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"]
