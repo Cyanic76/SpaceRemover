@@ -18,19 +18,14 @@ function generate(){
 		let n = 0;
 		while (n < chars) {
 			if(lower.checked){
-				console.log("Using lowercase");
 				let item = itemsL[Math.floor(Math.random() * itemsL.length)];
 				current += item;
-				console.log(`n = ${n}\nitem = ${item}`)
 			} else {
-				console.log("Using uppercase");
 				let item = items[Math.floor(Math.random() * items.length)];
 				current += item;
-				console.log(`n = ${n}\nitem = ${item}`)
 			}
 			n++;
 		}
-		console.log(`try ${i}: ${current}`)
 		final.value += `${current}\n`
 	}
 }
