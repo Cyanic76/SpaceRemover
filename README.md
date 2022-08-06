@@ -1,3 +1,5 @@
+:warning: Moved to [**Codeberg**](https://codeberg.org/Cyanic76/tools).
+
 # Many tools
 
 Some tools and scripts I made. Feel free to check them all out here.
